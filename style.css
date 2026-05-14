@@ -1,0 +1,171 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar{
+    background-color:rgb(177, 42, 42);;
+    opacity: 0.9;
+    height: 100%;
+    width: 300px;
+    max-width: 450px;
+    min-width: 250px; 
+    position: fixed;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    left: -350px;
+}
+
+.main_box{
+    background-image: url("./nail.websiteimage.jpg");
+    background-size: cover;
+    padding-top: 20px;
+    min-height: 100vh;
+    background-color: rgb(177, 42, 42);
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.main_box .text{
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    color: rgb(36, 30, 30);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    padding-left: 570px;
+}
+
+.sidebar_icons{
+   font-size: 23px;
+   gap: 20px;
+   line-height: 80px;
+   padding-top: 100px;
+   padding-left: 30px;
+   color: black;
+   opacity: 0.8;
+}
+
+.sidebar_icons a{
+       color: black;
+       text-decoration: none;
+       padding: 10px;
+       opacity: 0.8;
+}
+
+.sidebar_icons li:hover{
+    font-size: 26px;
+    margin: 2px;
+    opacity: 2;
+    color: black;
+           cursor: pointer;
+           box-shadow: 50px black;
+}
+
+.sidebar_icons ul {
+    list-style: none; 
+    padding-left: 0; 
+}
+
+/* .sidebar_icons ul:hover{
+               box-shadow: 50px black;
+
+} */
+
+.sidebar_btn1:hover{
+    opacity: 2;
+    transform: scale(1.3);
+       color: rgb(36, 30, 30);
+}
+
+#check{
+    display: none;
+}
+
+/* .sidebar_btn2:hover{
+       color: rgb(228, 200, 200);
+    opacity: 1.5;
+} */
+
+.sidebar_btn1{
+       color: rgb(36, 30, 30);
+    padding-left: 10px;
+        /* padding-top: 2px; */
+    font-size:25px;
+    font-weight: 700;
+    position: fixed;
+    line-height: 60px;
+    transition: all 0.5s ease-in-out;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    opacity: 0.9;
+}
+
+.sidebar_btn1 i.fa-xmark {
+  display: none;
+} 
+
+/* .sidebar_btn2{
+       color: rgb(228, 200, 200);
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-left: 320px;
+    font-size:25px;
+    font-weight: 700;
+    opacity: 1;
+    margin-top: 20px;
+}  */
+
+#check:checked~ .sidebar {
+    left:0;
+}
+ 
+/* #check:checked~ .sidebar_btn1 i{
+    opacity: 0;
+} */
+
+/* #check:checked~ .sidebar_btn2 i {
+    opacity: 1;
+} */
+
+.main_image{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+h2{
+    display: flex;
+       color: rgb(36, 30, 30);
+       line-height: 50px;
+       letter-spacing: 5px;
+       /* margin-bottom: 250px; */
+}
+
+.social_media{
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-around;
+       color: rgb(228, 200, 200);
+}
+
+.social_media i{
+    padding: 5px;
+    font-size: 20px;
+           color: rgb(36, 30, 30);
+
+}
+
+.bg_image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: static;
+    z-index: -1;
+}
