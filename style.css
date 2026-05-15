@@ -18,6 +18,10 @@
     left: -350px;
 }
 
+#heading{
+    color: red;
+}
+
 .main_box{
     background-image: url("./nail.websiteimage.jpg");
     background-size: cover;
